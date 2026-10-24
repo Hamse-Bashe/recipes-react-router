@@ -1,6 +1,5 @@
 import React from 'react'
-import { useParams, Link, Outlet } from 'react-router'
-import { recipes } from './RecipeList'
+import { Link, Outlet } from 'react-router'
 
 // Categories
 export const categories = [

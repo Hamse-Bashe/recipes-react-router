@@ -8,6 +8,7 @@ import { Breakfast } from "./components/Breakfast";
 import { Lunch } from "./components/Lunch";
 import { Dinner } from "./components/Dinner";
 import { Deserts } from "./components/Deserts";
+import { CategoryRecipes } from "./pages/CategoryRecipes";
 
 export const router = createBrowserRouter([
     {
@@ -32,19 +33,19 @@ export const router = createBrowserRouter([
                 children: [
                     {
                         path: 'breakfast',
-                        element: <Breakfast />
+                        element: <CategoryRecipes />
                     },
                     {
                         path: 'lunch',
-                        element: <Lunch />
+                        element: <CategoryRecipes />
                     },
                     {
                         path: 'dinner',
-                        element: <Dinner/>
+                        element: <CategoryRecipes/>
                     },
                     {
                         path: 'desserts',
-                        element: <Deserts />
+                        element: <CategoryRecipes />
                     },
                 ]
             }
