@@ -4,16 +4,15 @@ import { Home } from "./pages/Home";
 import { Categories } from "./pages/Categories";
 import { RecipeList } from "./pages/RecipeList";
 import { RecipeDetail } from "./pages/RecipeDetail";
-import { Breakfast } from "./components/Breakfast";
-import { Lunch } from "./components/Lunch";
-import { Dinner } from "./components/Dinner";
-import { Deserts } from "./components/Deserts";
 import { CategoryRecipes } from "./pages/CategoryRecipes";
+import NotFound from "./components/NotFound";
+
 
 export const router = createBrowserRouter([
     {
         path: '/',
         element: <App/>,
+        errorElement: <NotFound />,
         children: [
             {
                 index: true,
